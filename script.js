@@ -18,11 +18,18 @@ const library = [
 
 const numberOfBooksRead = () => {
 	let count=0;
-    for (let i = 0; i < library.length ; i++) {
-    	if(library[i].readingStatus){
-			count++;
+  //   for (let i = 0; i < library.length ; i++) {
+  //   	if(library[i].readingStatus){
+		// 	count++;
+		// }
+  //   }
+	// 2nd solution
+	library.forEach(function abc(book){
+		if(book.readingStatus){
+			count++
 		}
-    }
+	})
+	
 	return count;
 };
 
