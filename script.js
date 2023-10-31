@@ -24,7 +24,7 @@ const numberOfBooksRead = () => {
 		// }
   //   }
 	// 2nd solution
-	library.forEach(function abc(book){
+	library.forEach((book) =>{
 		if(book.readingStatus){
 			count++
 		}
